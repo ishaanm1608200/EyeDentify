@@ -39,7 +39,7 @@ export default function Navbar({ onOpenPreorder }: NavbarProps) {
                 EYEDENTIFY
               </span>
               <span className="text-[9px] font-mono tracking-widest text-cyan-300/80 uppercase mt-0.5">
-                AI Bionic Vision
+                AI Bionic Vision // India
               </span>
             </div>
           </a>
@@ -56,7 +56,7 @@ export default function Navbar({ onOpenPreorder }: NavbarProps) {
               Architecture
             </a>
             <a href="#pricing" className="hover:text-cyan-400 transition-colors">
-              Pre-Order
+              Pricing & Economics
             </a>
             <a href="#faq" className="hover:text-cyan-400 transition-colors">
               FAQ
@@ -67,14 +67,14 @@ export default function Navbar({ onOpenPreorder }: NavbarProps) {
           <div className="flex items-center gap-3">
             <div className="hidden lg:flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-mono uppercase tracking-wider">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-              <span>FDA Breakthrough Track</span>
+              <span>Engineered For India</span>
             </div>
 
             <button
               onClick={onOpenPreorder}
               className="px-5 py-2 rounded-full text-xs font-bold tracking-widest uppercase text-black bg-gradient-to-r from-cyan-400 to-teal-300 hover:brightness-110 active:scale-95 transition-all shadow-[0_0_25px_rgba(34,211,238,0.35)] cursor-pointer"
             >
-              Reserve Now
+              Reserve for ₹9,999
             </button>
 
             {/* Mobile menu trigger */}
@@ -118,7 +118,7 @@ export default function Navbar({ onOpenPreorder }: NavbarProps) {
             onClick={() => setMobileMenuOpen(false)}
             className="text-lg font-mono tracking-wider uppercase text-white hover:text-cyan-400"
           >
-            Pre-Order & Pricing
+            Pricing & Unit Economics
           </a>
           <a
             href="#faq"
@@ -133,9 +133,9 @@ export default function Navbar({ onOpenPreorder }: NavbarProps) {
               setMobileMenuOpen(false);
               onOpenPreorder();
             }}
-            className="w-full max-w-xs mt-4 py-3 rounded-full text-xs font-bold tracking-widest uppercase text-black bg-gradient-to-r from-cyan-400 to-teal-300 shadow-[0_0_30px_rgba(34,211,238,0.4)]"
+            className="w-full max-w-xs mt-4 py-3.5 rounded-full text-xs font-bold tracking-widest uppercase text-black bg-gradient-to-r from-cyan-400 to-teal-300 shadow-[0_0_30px_rgba(34,211,238,0.4)]"
           >
-            Reserve Eyedentify One
+            Reserve Eyedentify One (₹9,999)
           </button>
         </div>
       )}

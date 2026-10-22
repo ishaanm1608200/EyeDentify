@@ -5,28 +5,36 @@ import { ChevronDown, HelpCircle } from "lucide-react";
 
 const FAQS = [
   {
+    q: "Who is Eyedentify built for, and how is it customized for India?",
+    a: "Eyedentify is specifically engineered for millions of visually impaired and low-vision Indians. Unlike Western devices built for organized grid sidewalks, Eyedentify's spatial computer vision is trained for dynamic Indian environments—detecting open drains, uneven footpaths, potholes, stray animals, auto-rickshaws, and crowded metro stations. Furthermore, it recognizes Indian Rupee banknotes (₹10 to ₹500), scans UPI QR codes (GPay, PhonePe, Paytm), and provides voice guidance in Indian languages including Hindi, Tamil, Telugu, Marathi, Bengali, and English.",
+  },
+  {
+    q: "Why is Eyedentify priced at ₹9,999 when foreign alternatives cost ₹2,50,000 to ₹4,00,000?",
+    a: "Existing smart glasses (like OrCam or Envision) are imported, heavily marked up, and cost upwards of ₹2.5 to 4 Lakhs—putting them out of reach for 99% of Indians. We believe assistive technology is a fundamental human right, not a luxury. Our unit economics are 100% transparent: our current prototype making cost (Bill of Materials) is just ₹3,000 in total, and our full-fledged industrial final production unit will cost around ₹5,000 to manufacture. By designing directly in India and eliminating distributor markups, we can sustainably retail the device for just ₹9,999.",
+  },
+  {
+    q: "What is your business model, and why is there a ₹200 – ₹400 / month AI usage cost?",
+    a: "Our business model separates hardware from cloud intelligence to make the glasses radically affordable. You buy the physical device for an accessible one-time price of ₹9,999. The minimal ₹200 to ₹400 monthly fee covers continuous high-performance cloud AI inference (state-of-the-art vision-language models, conversational Talk AI, multi-lingual Indian speech synthesis, and OTA feature upgrades). It works out to just ₹7–₹13 a day—the cost of a cup of chai—ensuring your glasses continually get smarter over time.",
+  },
+  {
     q: "How does bone conduction audio work? Can people around me hear it?",
-    a: "Eyedentify uses patented dual-transducer bone conduction pads located discreetly on the temple tips. Vibrations pass directly into the inner ear through the temporal bones. The acoustic leakage is virtually imperceptible to bystanders (less than 25dB at 1 meter), while leaving your ear canals 100% unobstructed so you can safely hear ambient street sounds and conversations.",
+    a: "Eyedentify uses discreet dual-transducer bone conduction pads on the temple tips that transmit audio vibrations directly through your cheekbones into the inner ear. Acoustic leakage to bystanders is virtually zero, while leaving your ear canals 100% open so you can safely hear ambient Indian traffic, horn signals, and conversations around you.",
   },
   {
-    q: "Does Eyedentify require an internet or cellular connection to function?",
-    a: "No. All core safety modes—including Real-Time Obstacle Detection, Instant Reading OCR, and Payment Currency Verification—run 100% offline on the built-in Neural SoC. You have uninterrupted independence in subways, remote trails, or flights with zero cloud latency and total privacy.",
+    q: "Does Eyedentify work offline without internet?",
+    a: "Yes! Core life-safety features—such as Real-Time Obstacle & Pothole Detection, Instant Reading OCR, and Indian Banknote Identification—run 100% locally on the embedded neural processor with sub-18ms latency. An internet connection is only utilized for deep conversational queries in Talk AI Mode and cloud translation.",
   },
   {
-    q: "Can I wear Eyedentify with my existing prescription glasses?",
-    a: "Yes. Eyedentify features an ultra-precise magnetic lens snap-in system. When placing your pre-order or upon delivery, you can provide your optometry prescription, and our laboratory will fabricate custom anti-reflective corrective inserts that clip directly into the frame.",
+    q: "Can I wear Eyedentify with my prescription lenses?",
+    a: "Yes. Eyedentify features an ultra-lightweight magnetic optical snap-in frame. You can submit your optometry prescription during reservation or after delivery, and custom anti-reflective corrective lenses will be fabricated to clip seamlessly behind the smart frame.",
   },
   {
-    q: "How long does the battery last on a single charge?",
-    a: "The balanced lithium-polymer battery matrix delivers up to 16 hours of active mixed-mode navigation. The included magnetic braided fast-charger replenishes 80% battery capacity in just 35 minutes. An optional 10,000mAh charging vault extends runtime for up to 5 full recharge cycles.",
+    q: "How long does the battery last, and how do I recharge it?",
+    a: "The dual-cell lithium battery provides up to 16 hours of continuous active navigation. The magnetic braided fast-charger charges the glasses from 0 to 80% in just 35 minutes via any standard USB-C phone charger or power bank.",
   },
   {
-    q: "Is Eyedentify eligible for insurance coverage or non-profit grants?",
-    a: "Yes. In the United States and Canada, Eyedentify qualifies under assistive technology reimbursement codes. Eligible veterans (VA), vocational rehabilitation clients, and individuals covered by specific health plans can receive up to 100% grant coverage. Our dedicated accessibility team assists with all paperwork.",
-  },
-  {
-    q: "What is your refund and trial policy?",
-    a: "All pre-order reservation deposits are 100% refundable at any time prior to shipping with a single click. Furthermore, once your Eyedentify One arrives, you are protected by our 30-Day In-Home Mobility Trial: if you are not completely satisfied, return it for a full 100% refund.",
+    q: "What is your pre-order reservation and refund policy?",
+    a: "The pre-order reservation token (₹999) is 100% refundable at any time before dispatch with a single tap. Once your glasses arrive, you also get our 30-Day In-Home Mobility Guarantee: if Eyedentify does not significantly enhance your daily independence, return it for a complete 100% refund.",
   },
 ];
 
@@ -43,13 +51,13 @@ export default function FAQSection() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-cyan-500/10 border border-cyan-400/20 text-cyan-300 text-xs font-mono uppercase tracking-widest mb-4">
             <HelpCircle className="w-3.5 h-3.5" />
-            <span>Answers & Assurance</span>
+            <span>Answers & Integrity</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">
             Frequently Asked Questions
           </h2>
           <p className="text-base text-slate-300 font-light">
-            Everything you need to know about everyday wear, battery, prescriptions, and trial guarantees.
+            Everything you need to know about our Indian-first engineering, pricing breakdown, AI subscription, and warranty.
           </p>
         </div>
 
